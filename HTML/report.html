@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reports - Library System</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Library System</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="issue-return.html">Issue/Return</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="report-section">
+    <h2>Issued Books</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Book Title</th>
+          <th>Issued To</th>
+          <th>Issue Date</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>Ravi Kumar</td>
+          <td>2025-05-25</td>
+          <td>2025-06-01</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>Neha Sharma</td>
+          <td>2025-05-26</td>
+          <td>2025-06-02</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Returned Books</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Book Title</th>
+          <th>Returned By</th>
+          <th>Return Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Rahul Mehta</td>
+          <td>2025-05-30</td>
+          <td>On Time</td>
+        </tr>
+        <tr>
+          <td>The Hobbit</td>
+          <td>Simran Patel</td>
+          <td>2025-05-31</td>
+          <td>Late</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Overdue & Fines</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Book Title</th>
+          <th>Borrower</th>
+          <th>Days Overdue</th>
+          <th>Fine (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Hobbit</td>
+          <td>Simran Patel</td>
+          <td>2</td>
+          <td>₹10</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+
+</body>
+</html>

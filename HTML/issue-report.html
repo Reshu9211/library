@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Issue & Return - Library System</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+ <header>
+    <nav>
+      <h1>Library System</h1>
+      <ul class="nav-links">
+        <li><a href="http://127.0.0.1:5501/library/HTML/index1.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5501/library/HTML/books.html">Books</a></li>
+        <li><a href="http://127.0.0.1:5501/library/HTML/membership.html">Membership</a></li>
+        <li><a href="http://127.0.0.1:5501/library/HTML/issue-report.html">Issue/Return</a></li>
+        <li><a href="http://127.0.0.1:5501/library/HTML/report.html">Reports</a></li>
+        <li><a href="http://127.0.0.1:5501/library/HTML/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Issue a Book</h2>
+    <form id="issueForm">
+      <label for="bookName">Book Title:</label>
+      <input type="text" id="bookName" required />
+
+      <label for="memberName">Member Name:</label>
+      <input type="text" id="memberName" required />
+
+      <label for="issueDate">Issue Date:</label>
+      <input type="date" id="issueDate" required />
+
+      <label for="dueDate">Due Date:</label>
+      <input type="text" id="dueDate" readonly />
+
+      <button type="submit">Issue Book</button>
+    </form>
+
+    <h2>Return a Book</h2>
+    <form id="returnForm">
+      <label for="returnDate">Return Date:</label>
+      <input type="date" id="returnDate" required />
+
+      <button type="submit">Calculate Fine</button>
+    </form>
+
+    <p id="fineDisplay" style="margin-top: 15px; font-weight: bold;"></p>
+  </main>
+
+
+
+  <script src="../js/issue-return.js"></script>
+</body>
+</html>
